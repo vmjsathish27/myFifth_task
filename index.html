@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OIC Layout-1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <style>
+        .body {
+            background-color: gray;
+            width: 100vw;
+            height: 100vh;
+            overflow: scroll;
+        }
+
+        .container {
+            padding-top: 10px;
+        }
+
+        .mainScreen {
+            margin: 0;
+            padding: 0;
+            border: 1px solid gray;
+        }
+
+        .mainNav {
+            margin: 0;
+            padding: 0;
+            float: left;
+            height: 100vh;
+            background-color: #293349;
+        }
+
+        .mainNav nav {
+            margin: 35px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            background-color: #293349;
+        }
+
+        .mainNav i {
+            color: gray;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        .mainNav ul {
+            padding: 0;
+            margin: 0;
+            height: 100vh;
+        }
+       
+
+        .mainTab {
+            background-color: #eefffe;
+            float: right;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+            position: relative;
+        }
+
+        .mainTabwrite {
+            padding: 10px 0px 0px 10px;
+            margin: 0;
+            float: left;
+        }
+
+        .mainTabwrite h4 {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .contentNav navbar {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentNav {
+            padding: 0;
+            margin: 0;
+            background-color: white;
+        }
+
+        .contentNav nav li {
+            padding-left: 30px;
+        }
+
+        .contentScreen {
+            margin: 5px;
+            padding: 0;
+            background-color: #eefffe;
+        }
+
+        .contentwite {
+            padding: 0;
+            margin: 0px 0px 0px 10px;
+            border-bottom-color: 1px solid gray;
+            border-bottom-style: groove;
+            border-bottom-width: thin;
+            background-color: white;
+        }
+
+        .contentwite h6 {
+            font-size: 12px;
+            font-weight: 400;
+            padding: 5px;
+        }
+
+        .contentInside {
+            padding: 0;
+            margin: 10px 0px 0px 10px;
+            background-color: white;
+            position: absolute;
+        }
+
+        .contentInsideFirst {
+            padding: 5px 7px 0px 7px;
+            margin: 0;
+            width: 50vw;
+            float: left;
+        }
+
+        .contentInside1 {
+            padding: 0px 0px 20px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside1 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside1 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 5px 0px 0px 0px;
+        }
+
+        .contentInside1 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside11 {
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+        }
+
+        .contentInside11 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside11 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 3px 0px 0px 0px;
+        }
+
+        .contentInside12 {
+            padding: 20px 0px 0px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside12 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside12 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 5px 0px 0px 0px;
+        }
+
+        .contentInsideSecond {
+            padding: 5px 7px 30px 7px;
+            margin: 0;
+            width: 50vw;
+            float: left;
+        }
+
+        .contentInside2 {
+            padding: 0px 0px 7px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside2 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside2 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .contentInside2 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside21 {
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+        }
+
+        .contentInside21 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside21 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 3px 0px 0px 0px;
+        }
+
+        .contentInside22 {
+            padding: 20px 0px 0px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside22 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside22 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside22 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .contentInsideThird {
+            padding: 5px 7px 0px 7px;
+            margin: 0;
+            width: 50vw;
+            float: left;
+        }
+
+        .contentInside3 {
+            padding: 20px 0px 0px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside3 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside3 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .contentInside3 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside31 {
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+        }
+
+        .contentInside31 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside31 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 3px 0px 0px 0px;
+        }
+
+        .contentInside32 {
+            padding: 10px 0px 6px 0px;
+            margin: 0;
+            background-color: #eefffe;
+        }
+
+        .contentInside32 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside32 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 3px 0px 0px 0px;
+        }
+
+        .contentInsideFour {
+            padding: 5px 10px 0px 10px;
+            margin: 0;
+            width: 50vw;
+            float: left;
+        }
+
+        .contentInside4 {
+            padding: 16px 0px 4px 0px;
+            margin: 0;
+            background-color: lightcyan;
+        }
+
+        .contentInside4 img {
+            padding: 0;
+            margin: 0;
+        }
+
+        .contentInside4 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .contentInside4 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside41 {
+            padding: 10px 0px 10px 0px;
+            margin: 0;
+        }
+
+        .contentInside41 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside41 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 3px 0px 0px 0px;
+        }
+
+        .contentInside42 {
+            padding: 10px 0px 10px 0px;
+            margin: 5px 0px 5px 0px;
+            background-color: #eefffe;
+        }
+
+        .contentInside42 img {
+            padding: 10px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside42 h6 {
+            font-size: 14px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .contentInside42 p {
+            font-size: 10px;
+            font-weight: 450;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+            margin: 0;
+        }
+
+        .contentInside43 {
+            padding: 6px 0px 6px 0px;
+            margin: 4px 0px 4px 0px;
+            background-color: #c8f8a1;
+        }
+
+        .contentInside43 img {
+            padding: 0px 7px 0px 0px;
+        }
+
+        .contentInside43 h6 {
+            font-size: 10px;
+            color: gray;
+            padding: 0px 0px 0px 0px;
+        }
+
+        .rotate-360 {
+            -webkit-transform: rotate(360deg);
+            -moz-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="mainScreen col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="mainNav col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <center><img src="oiclo.png" alt="Brand Logo" style="width: 40px;height: 30px;margin: 10px 0px 0px 0px;padding: 0; cursor: pointer" id="ToggleCollapse" class="mainTogg"></center>
+                <nav class="navbar bg-#293349 navbar-dark justify-content-center">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <i class="fa fa-tachometer"> </i>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fa fa-home"></i>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fa fa-users"></i>
+                        </li>
+
+                        <li class="nav-item">
+                            <i class="fa fa-file-text-o"></i>
+                        </li>
+
+                        <li class="nav-item active">
+                            <i class="fa fa-cog" style="background-color:black;padding: 8px;border-radius: 10px;margin-top: 10px;margin-left: 6px;"></i>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="mainTab col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-11">
+                <div class="contentNav">
+                    <div class="mainTabwrite">
+                        <h4>Admin</h4>
+                    </div>
+
+                    <nav class="navbar navbar-expand-md flex-row-reverse">
+
+                        <ul class="navbar-nav justify-content-between">
+                            <li class="nav-item">
+                                <i class="fa fa-search" style="width: 15px;height: 16px"> </i>
+                            </li>
+
+                            <li class="nav-item">
+                                <i class="fa fa-plus" style="width: 15px;height: 16px"></i>
+                            </li>
+
+                            <li class="nav-item">
+                                <i class="fa fa-users" style="width: 15px;height: 16px; border-right-style: groove;border-right-width: thin;border-right-color: black;padding-right: 40px"></i>
+                            </li>
+
+                            <li class="nav-item">
+                                <img src="natur.png" alt="natureImg" style="width: 30px; border-radius: 200px">
+                            </li>
+
+                            <li class="nav-item">
+                                <i class="fa fa-bell" style="width: 15px;height: 16px"></i>
+                            </li>
+
+                            <li class="nav-item">
+                                <i class="fa fa-question-circle-o" style="width: 15px;height: 16px"></i>
+                            </li>
+                        </ul>
+
+                    </nav>
+                </div>
+
+                <div class="contentScreen">
+                    <div class="contentwite">
+                        <h6>Create new store</h6>
+                    </div>
+
+
+                    <div class="contentInside">
+                        <div class="contentInsideFirst flex-column col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+
+                            <div class="contentInside1">
+
+                                <img src="dart.png" alt="DartImg" style="width: 83px;height: 69px">
+
+                                <h6>Channels</h6>
+                                <p>There is a moment in the life<br>of any aspring astronomer</p>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="email.png" alt="EmailImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Mail</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="wats.png" alt="WatsupImg" style="width: 25px;height: 23px;float: left;margin: 0">
+                                <h6>Whatsapp</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="call.png" alt="CallImg" style="width: 27px;height: 27px;float: left">
+                                <h6>Phone</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="twit.png" alt="TwitterImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Twitter</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="fac.png" alt="FacebookImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Facebook</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="fbwid.png" alt="FacebookImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Facebook</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="sms.png" alt="SmsImg" style="width: 24px;height: 24px;float: left">
+                                <h6>SMS</h6>
+
+                            </div>
+                            <div class="contentInside11">
+
+                                <img src="chat.png" alt="LiveChatImg" style="width: 24px;height: 23px;float: left">
+                                <h6>Live Chat</h6>
+
+                            </div>
+                            <div class="contentInside12">
+
+                                <img src="profil.png" alt="Profile" style="width: 60px;height: 45px">
+
+                                <h6>custom profile</h6>
+
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="contentInsideSecond  flex-column justify-content-center col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="contentInside2">
+
+                                <img src="lap.png" alt="Laptop" style="width: 115px;height: 88px">
+
+                                <h6>Users</h6>
+                                <p>There is a moment in the life of any<br>aspring astronomer that it is time to</p>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Store Managers</h6>
+
+                            </div>
+
+                            <div class="contentInside21">
+
+                                <img src="box.png" alt="BoxImg" style="width: 24px;height: 19px;float: left">
+                                <h6>Groups</h6>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="lock.png" alt="LockImg" style="width: 23px;height: 21px;float: left">
+                                <h6>Roles</h6>
+
+                            </div>
+                            <div class="contentInside22">
+
+                                <img src="filewrite.png" alt="FileWriteImg" style="width: 80px;height: 60px">
+
+                                <h6>Task Setting</h6>
+                                <p>There is a moment in the life of any<br>aspring astronomer that it is time to</p>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Data Collection Task</h6>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="box.png" alt="BoxImg" style="width: 24px;height: 19px;float: left">
+                                <h6>Trending Task</h6>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="lock.png" alt="LockImg" style="width: 23px;height: 21px;float: left">
+                                <h6>Service Task</h6>
+
+                            </div>
+                            <div class="contentInside21">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Promotional Task</h6>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="contentInsideThird  flex-column justify-content-center col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                            <div class="contentInside3">
+
+                                <img src="set.png" alt="SettingsImg" style="width: 75px;height: 71px">
+
+                                <h6>Business Settings</h6>
+                                <p>There is a moment in the life of<br>any aspring astronomerthat it</p>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Domain</h6>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="box.png" alt="BoxImg" style="width: 24px;height: 19px;float: left">
+                                <h6>Type of Business</h6>
+
+                            </div>
+                            <div class="contentInside32">
+
+                                <img src="lock.png" alt="LockImg" style="width: 23px;height: 21px;float: left">
+                                <h6>Tupes of Store</h6>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="file.png" alt="FileImg" style="width: 17px;height: 21px;float: left">
+                                <h6>Business Name</h6>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="buswatch.png" alt="BusinessTimeImg" style="width: 21px;height: 22px;float: left">
+                                <h6>Business Name</h6>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="person.png" alt="BusinessOwnerImg" style="width: 23px;height: 23px;float: left">
+                                <h6>Business Owner Name</h6>
+
+                            </div>
+                            <div class="contentInside31">
+
+                                <img src="filecpy.png" alt="FileContactImg" style="width: 30px;height: 24px;float: left">
+                                <h6>Business Contact Name</h6>
+
+                            </div>
+
+                            <div class="contentInside31">
+
+                                <img src="emailnot.png" alt="EmailNotificationsImg" style="width: 24px;height: 22px;float: left">
+                                <h6>Email Notifications</h6>
+
+                            </div>
+
+                            <div class="contentInside31">
+
+                                <img src="person.png" alt="BusinessOwnerImg" style="width: 23px;height: 23px;float: left">
+                                <h6>Business Owner Name</h6>
+
+                            </div>
+                        </div>
+
+
+                        <div class="contentInsideFour  flex-column justify-content-center col-xl-3 col-lg-3 col-md-6 col-sm-12 col-xs-12">
+
+                            <div class="contentInside4">
+
+                                <img src="shop.png" alt="ShopImg" style="width: 75px;height: 71px">
+
+                                <h6>Store Settings</h6>
+                                <p>There is a moment in the life of any<br>aspring astronomer that it is time to</p>
+
+                            </div>
+                            <div class="contentInside41">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Store List</h6>
+
+                            </div>
+                            <div class="contentInside43">
+
+                                <img src="box.png" alt="BoxImg" style="width: 24px;height: 19px;float: left">
+                                <h6>Create</h6>
+
+                            </div>
+                            <div class="contentInside42">
+
+                                <img src="lap.png" alt="Laptop" style="width: 115px;height: 88px">
+
+                                <h6>Target</h6>
+                                <p>There is a moment in the life of any<br>aspring astronomer that it is time to</p>
+
+                            </div>
+                            <div class="contentInside41">
+
+                                <img src="set1.png" alt="SettingImg" style="width: 24px;height: 24px;float: left">
+                                <h6>Channels</h6>
+
+                            </div>
+                            <div class="contentInside41">
+
+                                <img src="box.png" alt="BoxImg" style="width: 24px;height: 19px;float: left">
+                                <h6>Templates</h6>
+
+                            </div>
+                            <div class="contentInside41">
+
+                                <img src="lock.png" alt="LockImg" style="width: 23px;height: 21px;float: left">
+                                <h6>Reports</h6>
+
+                            </div>
+                            <div class="contentInside4">
+
+                                <img src="lap1.png" alt="Laptop" style="width: 115px;height: 60px">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function() {
+
+            $('#ToggleCollapse').on('click', function() {
+                $('#demoNav').toggleClass('active');
+            });
+
+        });
+
+        $('.mainTogg').click(function() {
+            $(this).toggleClass('rotate-360');
+        });
+    </script>
+
+</body>
+
+</html>
